@@ -9,8 +9,33 @@
 </head>
 
 <body>
+    <!-- A1 -->
+    <div class="levels">
+        <div>
+            <button class="btnEl A1" data-id="A1" data-classitem="A1-flex-direction-row">
+                <span>flex-direction: row</span>
+            </button>
+            <button class="btnEl A1" data-id="A1" data-classitem="A1-flex-direction-row-rev">
+                <span>flex-direction: row-rev</span>
+            </button>
+            <button class="btnEl A1" data-id="A1" data-classitem="A1-flex-direction-col">
+                <span>flex-direction: column</span>
+            </button>
+            <button class="btnEl A1" data-id="A1" data-classitem="A1-flex-direction-col-rev">
+                <span>flex-direction: column</span>
+            </button>
+        </div>
+        <div class="container" id="A1Box">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+    </div>
+
     <!-- l1 -->
-    <div>
+    <div class="levels">
         <div>
             <button class="btnEl l1" data-id="l1" data-classitem="l1-flex-start">
                 <span>justify-content: flex-start</span>
@@ -41,7 +66,7 @@
     </div>
 
     <!-- l2 -->
-    <div>
+    <div class="levels">
         <div>
             <button class="btnEl l2" data-id="l2" data-classitem="l2-align-stretch">
                 <span>align-items: stretch</span>
@@ -85,6 +110,9 @@
                 })
             })
         }
+
+        let A1Btns = document.querySelectorAll(".A1");
+        modifyClass(A1Btns);
 
         let l1Btns = document.querySelectorAll(".l1");
         modifyClass(l1Btns);

@@ -15,6 +15,11 @@ body {
     font-size: 1.6rem;
 }
 
+.levels{
+    background-color: whitesmoke;
+    margin-bottom: 3rem;
+}
+
 .container {
     background-color: #ccc;
     padding: 10px;
@@ -32,6 +37,20 @@ body {
 .btnEl {
     padding: 2rem;
     margin: 2rem;
+}
+
+// A1 - classes
+.A1-flex-direction-row{
+    flex-direction: row;
+}
+.A1-flex-direction-row-rev{
+    flex-direction: row-reverse;
+}
+.A1-flex-direction-col{
+    flex-direction: column;
+}
+.A1-flex-direction-col-rev{
+    flex-direction: column-reverse;
 }
 
 // l1 - classes
